@@ -1,13 +1,34 @@
-# 🌍 Climate Change Project
+## 📓 Notebooks Overview
 
-This repository contains my work on a climate change prediction and visualization project. It focuses on analyzing wind and pressure data from atmospheric models to better understand and forecast weather patterns associated with climate change. The project applies machine learning techniques—particularly deep learning and self-organizing maps (SOMs)—to extract insights and create compelling visualizations.
+| Notebook | Description |
+|----------|-------------|
+| **`Final_taking_day_in_July.ipynb`** | Loads and filters CSV files from selected directories. Extracts only valid rows (`1802 != -1`) and appends a `"Day"` column based on filenames (e.g., `day12.csv` → Day 12). Useful for supervised training dataset preparation. |
+| **`ROI_creation_checkpoint.ipynb`** | Extracts and saves regions of interest (ROIs) from wind and pressure data per row. Also visualizes each ROI and saves the output to `extracted_region_viz/`. Ensures CNN models are trained on structured spatial sections. |
+| **`CNN_Prediction_second_step.ipynb`** | Loads pre-trained CNN models to predict atmospheric classes for test samples. Generates color-coded image comparisons (real vs predicted) for each day and saves them in `cnn_predict/`. Also includes legends for clarity. |
+| **`CNN_Bayesian_first_step.ipynb`** | Trains convolutional neural networks using Bayesian approaches to capture predictive uncertainty in atmospheric classifications. Includes uncertainty visualization and probabilistic output analysis to enhance model interpretability and robustness. |
 
-## 🧠 Core Features
+## 📊 Example Visualizations
 
-- Processing and cleaning of historical atmospheric data (wind and pressure fields).
-- Use of convolutional neural networks (CNNs) for weather pattern classification.
-- Self-organizing maps (SOMs) to cluster and visualize complex spatial patterns.
-- Extraction of wind/pressure sections and image-based data analysis.
-- Visual comparison of predictions and real-world data using color-coded image maps.
+- **Classified weather patterns** using CNNs (real vs predicted).
+- **Spatial ROIs** for wind and pressure extracted per row.
+- **Cluster evolution** using SOMs for unsupervised analysis.
 
-## 📁 Project Structure
+<p align="center">
+  <img src="cnn_predict/example_day_12.png" width="500" alt="Real vs Predicted">
+</p>
+
+## ⚙️ Technologies Used
+
+- **Python 3.x**
+- **TensorFlow / PyTorch** – for CNN modeling
+- **MiniSom / SOMPY / Custom SOMs** – for clustering atmospheric patterns
+- **OpenCV / Matplotlib / Seaborn** – for image and data visualization
+- **Pandas / NumPy / Scikit-learn** – for preprocessing and data handling
+
+## 🚀 Getting Started
+
+### 1. Clone the Repo
+
+```bash
+git clone https://github.com/yourusername/climate-change-project.git
+cd climate-change-project
