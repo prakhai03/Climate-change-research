@@ -30,5 +30,5 @@
 ### 1. Clone the Repo
 
 ```bash
-git clone https://github.com/yourusername/climate-change-project.git
+git clone https://github.com/prakhai03/climate-change-project.git
 cd climate-change-project
