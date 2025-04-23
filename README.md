@@ -13,7 +13,7 @@
 - **Spatial ROIs** for wind and pressure extracted per row.
 - **Cluster evolution** using SOMs for unsupervised analysis.
 
-<details> <summary>📸 Click to expand example predictions</summary> <p align="center"> <img src="cnn_predict_bayesian_accurate/day_3412.png" width="500" alt="CNN Prediction - Day 12"><br> <img src="cnn_predict_bayesian_accurate/day_3586.png" width="500" alt="Bayesian CNN - Day 3586"><br> <img src="cnn_predict_bayesian_accurate/day_3589.png" width="500" alt="Bayesian CNN - Day 3589"><br> </p> </details>
+<details> <summary>📸 Click to expand example predictions</summary> <h3>Step 1 </h3><p align="center"> <img src="cnn_predict_bayesian_accurate/day_3412.png" width="500" alt="CNN Prediction - Day 12"><br> <img src="cnn_predict_bayesian_accurate/day_3586.png" width="500" alt="Bayesian CNN - Day 3586"><br> <img src="cnn_predict_bayesian_accurate/day_3589.png" width="500" alt="Bayesian CNN - Day 3589"><br> </p> </details>
 
 ## ⚙️ Technologies Used
 
